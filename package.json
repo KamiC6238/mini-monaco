@@ -12,10 +12,14 @@
   "module": "./dist/tiny-monaco.js",
   "exports": {
     ".": {
-      "import": "./dist/tiny-monaco.js"
+      "import": "./dist/tiny-monaco.js",
+      "types": "./dist/main.d.ts"
     }
   },
-  "files": ["dist", "package.json"],
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -32,6 +36,7 @@
     "lightningcss": "^1.21.7",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.3",
     "vite-plugin-lightningcss": "^0.0.5"
   }
 }

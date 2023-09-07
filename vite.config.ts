@@ -1,6 +1,7 @@
 import * as path from 'node:path'
 import { defineConfig } from 'vite'
 import lightningcss from 'vite-plugin-lightningcss'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
@@ -18,18 +19,19 @@ export default defineConfig({
       },
     },
   },
-  resolve: {
-    alias: [
-      {
-        find: /monaco\-editor$/,
-        replacement: 'monaco-editor/esm/vs/editor/editor.api.js',
-      },
-    ],
-  },
+  // resolve: {
+  //   alias: [
+  //     {
+  //       find: /monaco\-editor$/,
+  //       replacement: 'monaco-editor/esm/vs/editor/editor.api.js',
+  //     },
+  //   ],
+  // },
   plugins: [
     lightningcss({
       browserslist: '>= 0.25%',
       minify: true,
     }),
+    dts(),
   ],
 })

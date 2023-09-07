@@ -1,4 +1,4 @@
-import * as monaco from 'monaco-editor'
+import * as monaco from 'monaco-editor/esm/vs/editor/editor.api.js'
 
 import 'monaco-editor/esm/vs/language/typescript/monaco.contribution'
 import 'monaco-editor/esm/vs/basic-languages/javascript/javascript.contribution'
