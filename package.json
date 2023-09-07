@@ -1,0 +1,37 @@
+{
+  "name": "tiny-monaco",
+  "version": "0.0.1",
+  "description": "A tiny monaco-editor only support JavaScript and TypeScript with code highlight and code completions.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KamiC6238/mini-monaco"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/tiny-monaco.js",
+  "module": "./dist/tiny-monaco.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tiny-monaco.js"
+    }
+  },
+  "files": ["dist", "package.json"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.41.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.41.0",
+    "@types/node": "^20.5.9",
+    "eslint": "^8.48.0",
+    "lightningcss": "^1.21.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-lightningcss": "^0.0.5"
+  }
+}
