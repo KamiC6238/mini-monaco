@@ -4,7 +4,7 @@
   "description": "A tiny monaco-editor only support JavaScript and TypeScript with code highlight and code completions.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KamiC6238/mini-monaco"
+    "url": "https://github.com/KamiC6238/tiny-monaco"
   },
   "license": "MIT",
   "type": "module",
