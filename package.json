@@ -1,6 +1,6 @@
 {
   "name": "tiny-monaco",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A tiny monaco-editor only support JavaScript and TypeScript with code highlight and code completions.",
   "repository": {
     "type": "git",
