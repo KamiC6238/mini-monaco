@@ -8,9 +8,11 @@ import 'monaco-editor/esm/vs/editor/contrib/suggest/browser/suggestController.js
 import EditorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker'
 import TsWorker from 'monaco-editor/esm/vs/language/typescript/ts.worker?worker'
 
-type MonacoEditorOptions = monaco.editor.IStandaloneEditorConstructionOptions
+export type MonacoEditor = monaco.editor.IStandaloneCodeEditor
+export type MonacoEditorOptions = monaco.editor.IStandaloneEditorConstructionOptions
 
-window.MonacoEnvironment = {
+// eslint-disable-next-line no-restricted-globals
+self.MonacoEnvironment = {
   getWorker(_, label) {
     if (label === 'javascript' || label === 'typescript')
       return new TsWorker()

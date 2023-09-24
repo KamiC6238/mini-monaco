@@ -21,14 +21,6 @@ export default defineConfig({
       },
     },
   },
-  // resolve: {
-  //   alias: [
-  //     {
-  //       find: /monaco\-editor$/,
-  //       replacement: 'monaco-editor/esm/vs/editor/editor.api.js',
-  //     },
-  //   ],
-  // },
   plugins: [
     lightningcss({
       browserslist: '>= 0.25%',
