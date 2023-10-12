@@ -17,3 +17,16 @@ const editor = createEditor(
     {/** options */}
 )
 ```
+
+# Troubleshooting
+
+If you're using vite to build your project, make sure to add the following code to your `vite.config.js` file.
+```javascript
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+    optimizeDeps: {
+        exclude: ['tiny-monaco']
+    }
+})
+```
